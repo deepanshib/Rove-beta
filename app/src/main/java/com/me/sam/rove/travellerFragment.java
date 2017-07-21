@@ -1,6 +1,7 @@
 package com.me.sam.rove;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,7 +13,7 @@ import android.widget.ImageView;
 
 
 public class travellerFragment extends Fragment {
-    ImageView b1,b2,b3,b4;
+    ImageView b1,b2,b3,b4,b5,b6,back;
 
     public travellerFragment() {
         // Required empty public constructor
@@ -33,6 +34,14 @@ public class travellerFragment extends Fragment {
         b1=(ImageView) view.findViewById(R.id.bt1b);
         b2= (ImageView) view.findViewById(R.id.bt2b);
         b3= (ImageView) view.findViewById(R.id.bt3b);
+        back= (ImageView) view.findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getContext(),MainActivity.class));
+            }
+        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

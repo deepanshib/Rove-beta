@@ -1,0 +1,522 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.deepali.travel_deepali.west_hotels">
+
+    <LinearLayout
+        android:id="@+id/all_hotels"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/radisson_blu"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="185dp"
+                android:src="@drawable/radisson"
+                android:scaleType="fitXY"
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RADISSON BLU HOTEL"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Outer Ring Road,Pashim Vihar,New Delhi-110063"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.4,480"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/piccadely"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="185dp"
+                android:src="@drawable/piccadely"
+                android:scaleType="fitXY"
+
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PICCADILY HOTEL"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="District Centre Complex, Janakpuri, New Delhi-110058"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.4,500"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tajplace"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="185dp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/taj"
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TAJ PALACE"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Sardar Patel Marg, Chanakyapuri,New Delhi- 110021 "
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.8,250"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pallazo"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="185dp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/plazzo_in"
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PALAZZO INN"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="A2/13-14 Main Pankha Road, Janak Puri,New Delhi-110085"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.3,500"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/hotel_eternity"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="185dp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/eternity"
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOTEL ETERNITY"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="B-40, Vishal Enclave,Rajouri Garden,New Delhi-110027 "
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.5333"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/treebo_glory"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="185dp"
+                android:src="@drawable/villa"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TREEBO GLORY VILLA"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="AL-8B,Jail Road,Hari Nagar,Near Dayal Sons Furniture,New Delhi-110058"
+                    android:textSize="12dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Price : Rs.1845"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

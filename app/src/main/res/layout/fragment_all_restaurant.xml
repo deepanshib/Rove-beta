@@ -1,0 +1,507 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.deepali.travel_deepali.ALL_restaurant">
+    <LinearLayout
+        android:id="@+id/east_food"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="185dp"
+                android:src="@drawable/gharbistro"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GHAR BISTRO CAFE"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="J-198, 2nd Floor, Rajouri Garden, New Delhi"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="OPENS At : 11:30am"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/kake_di_hatti"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="185dp"
+                android:src="@drawable/kake"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KAKE DI HATTI"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="654-666, Church Mission Road, Fatehpuri, Chandni Chowk, New Delhi"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="OPENS At : 08:00am"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="185dp"
+                android:src="@drawable/ratna"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAGAR RATNA"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Shop No.F-2, First Floor, Kalkaji Main Road, Block F, Kalkaji, New Delhi, Delhi 110019"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="OPENS At : 09:00am"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="185dp"
+                android:src="@drawable/delhi_pavilllion"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DELHI PAVILION"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Sheraton New Delhi Hotel, District Centre, Saket, New Delhi"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="OPENS  : 24 hrs"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/hudson"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="185dp"
+                android:src="@drawable/hudsoncafe"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THE HUDSON CAFE"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="2524,1ST FLOOR,HUDSON LANE,GTB NAGAR,110009"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="OPENS At : 11:00am"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/indus_flavour"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="185dp"
+                android:src="@drawable/indus_flavour"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INDUS FLAVOUR"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="2510,HUDSON LANE,KINGSWAY CAMP,GTB NAGAR ,DELHI,110009"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="OPENS At : 11:00am"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

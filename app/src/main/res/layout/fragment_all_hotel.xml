@@ -1,0 +1,765 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.deepali.travel_deepali.All_hotel">
+
+    <LinearLayout
+        android:id="@+id/all_hotels"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/shervani"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="185dp"
+                android:src="@drawable/shervani"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHERVANI"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="B-20, Chirag Enclave, New Delhi-110048"
+                    android:textSize="12dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Price : Rs.4500"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/radisson_blu"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp">
+        <ImageView
+
+            android:layout_width="185dp"
+            android:src="@drawable/radisson"
+            android:scaleType="fitXY"
+
+
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="198dp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RADISSON BLU HOTEL"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginRight="10dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="Outer Ring Road,Pashim Vihar,New Delhi-110063"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="PRICE : Rs.4,480"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                />
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="47dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/call"
+                    android:paddingLeft="0dp"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+
+                    android:text="CALL" />
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/MERIDIAN"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="185dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/meridian"
+
+
+
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="198dp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LE MERIDIAN"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginRight="10dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="Windsor Place , New Delhi- 110001"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="PRICE : Rs.9500"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                />
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="47dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/call"
+                    android:paddingLeft="0dp"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+
+                    android:text="CALL" />
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/hotel_glance_in"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp">
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="185dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/glance_in"
+
+
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="198dp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOTEL GLANCE-IN"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginRight="10dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="442, Lalita park Marginal Bandh Road, Laxmi Nagar,New Delhi- 110092"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="PRICE : Rs.1950"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                />
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="47dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/call"
+                    android:paddingLeft="0dp"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+
+                    android:text="CALL" />
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/parkresidency"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+
+                android:layout_width="185dp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/parkresidency"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PARK RESIDENCY"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="4, CD Block Road,Pitampura, New Delhi, Delhi 110034"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.2640"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/oyorooms"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+
+                android:layout_width="185dp"
+                android:src="@drawable/oyorooms"
+                android:scaleType="fitXY"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OYO ROOMS"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="1418,Nicholsan Road,Kashmere Gate,Delhi,110006 New Delhi"
+                    android:textSize="12dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Price : Rs.1969"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/LEELA"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="185dp"
+                android:src="@drawable/leela"
+                android:scaleType="fitXY"
+
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THE LEELA PALACE"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Diplomatic Enclave, Chanakyapuri, New Delhi-110023"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.12,500"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/svelte"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="185dp"
+
+                android:scaleType="fitXY"
+
+                android:src="@drawable/saket"
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Svelte Hotel and Personal Suite"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="A- 3, District Centre,Select City Walk Mall, Saket,New Delhi-110017"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.5300"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/surya"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="185dp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/suryaa"
+
+
+
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="198dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THE SURYAA HOTEL"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="New Friends Colony,New Delhi-110025"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PRICE : Rs.7424"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="47dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/call"
+                        android:paddingLeft="0dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+                        android:text="CALL" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

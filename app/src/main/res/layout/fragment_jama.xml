@@ -37,7 +37,7 @@
         android:adjustViewBounds="false"
         android:cropToPadding="false"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/jama" />
+        app:srcCompat="@drawable/jamamasjid" />
 
     <TextView
         android:id="@+id/tv1"
