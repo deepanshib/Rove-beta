@@ -61,7 +61,7 @@ public class Experience extends Fragment{
             public void onClick(View v) {
                 travellerFragment abc = new travellerFragment();
 
-                getChildFragmentManager().beginTransaction().replace(R.id.content,abc).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.layoutExperience,abc).commit();
 
             }
         });
@@ -71,7 +71,7 @@ public class Experience extends Fragment{
             public void onClick(View v) {
                 explorerFragment abc = new explorerFragment();
 
-                getChildFragmentManager().beginTransaction().replace(R.id.content,abc).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.layoutExperience,abc).commit();
             }
         });
 

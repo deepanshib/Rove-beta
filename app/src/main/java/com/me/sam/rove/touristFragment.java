@@ -9,10 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 public class touristFragment extends Fragment {
-ImageButton b15,b14,b13;
+ImageView b1,b2,b3;
 
     public touristFragment() {
         // Required empty public constructor
@@ -30,33 +31,32 @@ ImageButton b15,b14,b13;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.locations_one, container, false);
-        b15=(ImageButton)view.findViewById(R.id.imageButton15);
-        b14= (ImageButton)view.findViewById(R.id.imageButton14);
-        b13= (ImageButton)view.findViewById(R.id.imageButton13);
-        b15.setOnClickListener(new View.OnClickListener() {
+        b1=(ImageView) view.findViewById(R.id.bt1a);
+        b2= (ImageView) view.findViewById(R.id.bt2a);
+        b3= (ImageView) view.findViewById(R.id.bt3a);
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 dollfragment abc = new dollfragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,abc).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
-        b14.setOnClickListener(new View.OnClickListener() {
+        b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 gandhifragment abc = new gandhifragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,abc).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
-        b13.setOnClickListener(new View.OnClickListener() {
+        b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 sciencefragment abc = new sciencefragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,abc).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
         return view;

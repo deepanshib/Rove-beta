@@ -5,52 +5,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/places"
+        >
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/button"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:text="Back" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#05eef2">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="50dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="back"
+                    android:src="@drawable/back" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\t\t\tPlaces to Visit"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    />
+            </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp">
+            <ImageView
+                android:layout_width="200dp"
+                android:id="@+id/bt1a"
                 android:layout_height="match_parent"
-                android:text="Places to Visit"
-                android:textSize="30dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_weight="10"/>
+                android:scaleType="fitCenter"
+                android:src="@drawable/dollfinal"
+                android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:id="@+id/bt2a"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gandhi2"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="20dp">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/bt3a"
+                    android:src="@drawable/qutub" />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/bt4"
+                    android:src="@drawable/qutub" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="20dp">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qutub" />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qutub" />
+            </LinearLayout>
         </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/imageButton15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-        <ImageButton
-            android:id="@+id/imageButton14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-        <ImageButton
-            android:id="@+id/imageButton13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-    </LinearLayout>
-
+        </LinearLayout>
+    </RelativeLayout>
 </ScrollView>
