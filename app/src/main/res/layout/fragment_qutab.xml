@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/qutab" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="back" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/b1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="map"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUTAB MINAR"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            android:text="A valuable, protected structure of India is Qutub Minar. It was declared as a UNESCO World Heritage Site. The structure is situated in the Mehrauli area of Delhi. Qutub Minar Metro Station located
+
+Timings: The visit to the structure is restricted to the day time between sunrise and sunset on all days.
+
+Entry fee: For Indian citizens: Rs. 30 and for foreign nationals: Rs.500.
+For children up to 15years, the entry is free.
+
+Location: Mehrauli in South West district of New Delhi, India.
+"
+
+            android:visibility="visible" />
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

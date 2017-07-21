@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/redfort" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="back" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/b1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="map"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RED FORT"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            android:text="Red Fort brilliant architectural beauty is a historical fort in Delhi. It was the main residence of the emperors of the Mughal Dynasty for more than 200 years. The Mughal families lived there until 1857. It was also the political and cultural centre of the Mughal state and was the place where a lot of significant events took place.
+
+Red Fort Light and Sound Show:
+Starts at 06:00 pm. It is a show regarding the history of Red Fort and Delhi. The show is in Hindi and English with a half an hour gap in between the two shows. Tickets for adults are for Rs.80 and for children are Rs.30.
+
+Timing: 09:30 am - 04:30 pm (Tuesday-Sunday). Monday closed.
+
+Entry Fee: Indian citizens: Rs.10. Foreigners is Rs.150.
+
+Location: Netaji Subhash Marg, Lal Qila, Chandni Chowk, New Delhi, Delhi 110006.
+"
+
+            android:visibility="visible" />
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

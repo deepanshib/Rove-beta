@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.me.sam.rove.services"
+    android:background="@drawable/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/backn"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Public Services"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/hospitals"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/hospn"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/ps"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/psn"
+            android:layout_margin="5dp"
+            android:layout_weight="1.58" />
+
+        <Button
+            android:id="@+id/lib"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/libn"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/bank"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/bankn"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"/>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

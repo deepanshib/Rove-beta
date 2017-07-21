@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/jantarmantar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="back" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/b1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="map"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JANTAR MANTAR"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            android:text="At Delhi Jantar Mantar, there are 13 architectural astronomy instruments. This observatory was designed in order to compile the astronomical tables and to predict the movement and timings of the sun, the moon and the planets. The Observatory possesses masonry built astronomical instruments.
+
+Timings: 09:00 am - 07:00 pm.(All Days)
+
+Entry fee: Indian citizens have to pay INR 5 and foreign nationals have to pay INR 100.
+
+Location: Sansad Marg, Connaught Place, New Delhi, Delhi 110001.
+"
+
+            android:visibility="visible" />
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

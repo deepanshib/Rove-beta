@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/nehrum" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="back" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/b1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="map"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEHRU MEMORIAL AND PLANETARIUM"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            android:text="The residence of Late Jawaharlal Nehru, the first Prime Minister of India was converted into a museum after his death. The museum is a fascinating place to learn about the history of the Independence Movement.
+There are several photographs of the erstwhile Prime Minister, giving an account of his life. Besides this, the colonial building is also equally interesting, with its teak paneled rooms with high ceilings, spacious verandas and well kept gardens.
+
+Timings:9 am to 6:30 pm (Closed on Monday, Gazetted National Holidays and Festivals)
+
+Entry Fees:  Nil
+
+Location: Teen Murti Bhavan, Teen Murti Marg, New Delhi
+
+Nearest Metro Station:Central Secratariat
+
+"
+
+            android:visibility="visible" />
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
