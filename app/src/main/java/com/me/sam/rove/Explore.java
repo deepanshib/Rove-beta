@@ -2,57 +2,69 @@ package com.me.sam.rove;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
+import com.me.sam.rove.mapactivity;
+//import com.wajahatkarim3.easyflipview.EasyFlipView;
+import com.me.sam.rove.R;
 
 public class Explore extends Fragment {
-ImageButton maps, services;
+    ImageButton img;
     public Explore() {
         // Required empty public constructor
     }
 
-
-    // TODO: Rename and change types and number of parameters
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_explore, container, false);
-
-        maps = (ImageButton) view.findViewById(R.id.mapButton);
-        services=(ImageButton)view.findViewById(R.id.services);
-
-
-        services.setOnClickListener(new View.OnClickListener() {
+        View view=inflater.inflate(R.layout.fragment_explore, container, false);
+        img= (ImageButton) view.findViewById(R.id.mapButton);
+        img.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                services abc = new services();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,abc).commit();
+            public void onClick(View view) {
+                Toast.makeText(getContext(),"Please Wait until the Map loads",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getContext(),mapactivity.class));
             }
         });
+//        final EasyFlipView easyFlipView2 = (EasyFlipView) view.findViewById(R.id.easyFlipView2);
+//        easyFlipView2.setFlipDuration(1000);
+//        easyFlipView2.setFlipEnabled(true);
+//        view.findViewById(R.id.imgFrontCard2).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getContext(), "Front Card", Toast.LENGTH_SHORT).show();
+//                easyFlipView2.flipTheView();
+//
+//            }
+//        });
+//
+//        view.findViewById(R.id.imgBackCard2).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getContext(), "Back Card", Toast.LENGTH_SHORT).show();
+//                easyFlipView2.flipTheView();
+//            }
+//        });
+        return view;
 
-        maps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               startActivity(new Intent(getActivity(),MapsActivity.class));// either getContext() or getActivity()
+    }
 
-            }
-        });
-        return inflater.inflate(R.layout.fragment_explore, container, false);
+    // TODO: Rename method, update argument and hook method into UI event
+    public void onButtonPressed(Uri uri) {
     }
 
 }

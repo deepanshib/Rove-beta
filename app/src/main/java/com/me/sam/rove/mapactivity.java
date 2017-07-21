@@ -1,13 +1,11 @@
 package com.me.sam.rove;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-
+import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -19,7 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class mapactivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
@@ -28,8 +26,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
@@ -38,8 +35,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        String location[] = {"Doll Museum Delhi", "Red fort", "Qutub Minar", "India gate Delhi","chandni chowk delhi","Lotus temple","humayun's tomb","Delhi Zoo","INA delhi haat ","Akshardhaam temple Delhi"};
-        //is array me aur naam add krdio
+        String location[] = {"Doll Museum Delhi", "Red Fort", "Qutub Minar", "India Gate Delhi","Chandni Chowk delhi","Lotus temple","Humayun's Tomb","Delhi Zoo","INA Delhi Haat ","Akshardhaam Temple Delhi","Janter Manter Delhi"};
         List<Address> addressList = null;
         for (int i = 0; i < location.length; i++) {
             if (location[i] != null || !location[i].equals("")) {
@@ -58,6 +54,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng latLng = new LatLng(28.7041, 77.1025);
         CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(latLng, 11.0f);
         mMap.animateCamera(yourLocation);
+        mMap.addMarker(new MarkerOptions().position(latLng).title("Current Location"));
+      //  mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
     }
+public void back(View view){
+   startActivity(new Intent(this, MainActivity.class));
 }
-
+}

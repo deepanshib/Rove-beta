@@ -19,11 +19,6 @@
             android:layout_height="562dp"
             android:orientation="vertical">
 
-
-
-
-
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cvTourist"
                 android:layout_width="325dp"

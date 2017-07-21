@@ -67,8 +67,6 @@
                 android:paddingBottom="0dp"
                 android:paddingTop="0dp"
                 android:scaleType="centerCrop"
-
-
                 android:src="@drawable/map" />
         </LinearLayout>
         <LinearLayout
@@ -109,7 +107,7 @@
                 android:src="@drawable/pt" />
 
             <ImageButton
-                android:id="@+id/services"
+                android:id="@+id/nearby"
                 style="@android:style/Widget.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
