@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorPrimary"
-    tools:context="com.example.deepali.travel_deepali.all_hotels">
+    android:background="@drawable/bg"
+    tools:context="com.me.sam.rove.all_hotels">
     <LinearLayout
         android:id="@+id/all_hotels"
 

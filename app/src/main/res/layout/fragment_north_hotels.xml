@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.me.sam.rove.north_hotels"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/bg">
 
     <LinearLayout
         android:id="@+id/all_hotels"

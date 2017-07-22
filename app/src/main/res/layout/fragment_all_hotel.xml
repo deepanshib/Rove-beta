@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
-
+    android:background="@drawable/bg"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.deepali.travel_deepali.All_hotel">
+    tools:context="com.me.sam.rove.All_hotel">
 
     <LinearLayout
         android:id="@+id/all_hotels"

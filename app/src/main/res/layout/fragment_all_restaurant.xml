@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.deepali.travel_deepali.ALL_restaurant">
+    tools:context="com.me.sam.rove.ALL_restaurant">
     <LinearLayout
         android:id="@+id/east_food"
 
