@@ -35,7 +35,6 @@ public class Hotels extends Fragment {
         south=(Button)view.findViewById(R.id.south1);
         east=(Button)view.findViewById(R.id.east1);
         west=(Button)view.findViewById(R.id.west1);
-         go=(ImageButton)view.findViewById(R.id.back1);
         All_hotel a=new All_hotel();
         getChildFragmentManager().beginTransaction().replace(R.id.hotel_frame,a).commit();
         north.setOnClickListener(new View.OnClickListener() {

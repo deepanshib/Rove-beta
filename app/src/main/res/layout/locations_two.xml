@@ -23,8 +23,8 @@
                 android:background="#05eef2">
 
                 <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="50dp"
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
                     android:layout_height="?attr/actionBarSize"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -48,13 +48,15 @@
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
                     android:id="@+id/bt1b"
-                    android:src="@drawable/qutub" />
+                    android:layout_weight="1"
+                    android:src="@drawable/dollfinal" />
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
+                    android:scaleType="centerCrop"
                     android:id="@+id/bt2b"
-                    android:src="@drawable/qutub" />
+                    android:layout_weight="1"
+                    android:src="@drawable/haat" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,12 +67,15 @@
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
                     android:id="@+id/bt3b"
-                    android:src="@drawable/qutub" />
+                    android:layout_weight="1"
+                    android:src="@drawable/tomb" />
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/qutub" />
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:id="@+id/bt4b"
+                    android:src="@drawable/abc" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -80,12 +85,65 @@
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/qutub" />
+                    android:id="@+id/bt5b"
+                    android:src="@drawable/iskon" />
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/qutub" />
+                    android:id="@+id/bt3a"
+                    android:src="@drawable/qutub2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:id="@+id/bt1a"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/redfo"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/bt2a"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/lot" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="20dp">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/bt5a"
+                    android:src="@drawable/jama" />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/bt6a"
+                    android:layout_weight="1"
+                    android:src="@drawable/zoo2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/bt4a"
+                    android:src="@drawable/aksh1" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

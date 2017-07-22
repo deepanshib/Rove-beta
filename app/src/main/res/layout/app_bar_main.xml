@@ -33,7 +33,7 @@
                 android:layout_width="30dp"
                 android:layout_height="?attr/actionBarSize"
                 android:onClick="camera"
-                android:src="@drawable/camcc" />
+                android:src="@drawable/camc" />
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

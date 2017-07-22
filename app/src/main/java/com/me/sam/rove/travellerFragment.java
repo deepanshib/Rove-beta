@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 
 public class travellerFragment extends Fragment {
-    ImageView b1,b2,b3,b4,b5,b6,back;
+    ImageView b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,back;
 
     public travellerFragment() {
         // Required empty public constructor
@@ -34,6 +34,15 @@ public class travellerFragment extends Fragment {
         b1=(ImageView) view.findViewById(R.id.bt1b);
         b2= (ImageView) view.findViewById(R.id.bt2b);
         b3= (ImageView) view.findViewById(R.id.bt3b);
+        b4= (ImageView) view.findViewById(R.id.bt4b);
+        b5= (ImageView) view.findViewById(R.id.bt5b);
+        b6= (ImageView) view.findViewById(R.id.bt3a);
+        b6= (ImageView) view.findViewById(R.id.bt3a);
+        b7= (ImageView) view.findViewById(R.id.bt1a);
+        b8= (ImageView) view.findViewById(R.id.bt2a);
+        b9= (ImageView) view.findViewById(R.id.bt5a);
+        b10= (ImageView) view.findViewById(R.id.bt6a);
+        b11= (ImageView) view.findViewById(R.id.bt4a);
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,24 +55,43 @@ public class travellerFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                nehrufragment abc = new nehrufragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
+                dollfragment abc = new dollfragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
-        b2.setOnClickListener(new View.OnClickListener() {
+
+        b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                qutabfragment abc = new qutabfragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
+                nehrufragment abc = new nehrufragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
-        b3.setOnClickListener(new View.OnClickListener() {
+
+        b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 redfortfragment abc = new redfortfragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
+            }
+        });
+
+        b6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                qutabfragment abc = new qutabfragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
+            }
+        });
+        b9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                jamafargment abc = new jamafargment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
         return view;
