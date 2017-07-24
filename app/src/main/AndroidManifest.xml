@@ -4,33 +4,35 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-feature android:name="android.hardware.camera" android:required="false"></uses-feature>
-    <user-feature android:name="android.hardware.camera" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
+    <user-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/logoooo"
         android:label="@string/app_name"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.vision"
-            android:value="@integer/google_play_services_version">
-
-        </meta-data>
-       <!-- <meta-data
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/YOUR_API_KEY"></meta-data> //sunsunsun
         -->
@@ -41,26 +43,24 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".mapactivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".LogInPage"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SignUpPage"
+            android:label="@string/app_name" />
+        <activity android:name=".developers" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".mapactivity"
-            android:label="@string/app_name">
-
-        </activity>
-        <activity
-            android:name=".LogInPage"
-            android:label="@string/app_name">
-
-        </activity>
-        <activity
-            android:name=".SignUpPage"
-            android:label="@string/app_name">
-
         </activity>
     </application>
 

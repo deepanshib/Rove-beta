@@ -2,6 +2,7 @@ package com.me.sam.rove;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wajahatkarim3.easyflipview.EasyFlipView;
@@ -29,8 +31,8 @@ import com.wajahatkarim3.easyflipview.EasyFlipView;
 public class Explore extends Fragment {
     ImageView food,accomodation;
     ImageView img;
-
-
+TextView ola,uber,bus,metro;
+ImageView nearby;
     ImageView cabs;
 
 
@@ -52,8 +54,46 @@ public class Explore extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_exploring__fragment, container, false);
         cabs=(ImageView)view.findViewById(R.id.cabs1);
+        ola=(TextView)view.findViewById(R.id.ola);
+        uber=(TextView)view.findViewById(R.id.uber);
+        bus=(TextView)view.findViewById(R.id.bus);
+        metro=(TextView)view.findViewById(R.id.metro);
+        ola.setPaintFlags(ola.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        uber.setPaintFlags(uber.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        bus.setPaintFlags(bus.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        metro.setPaintFlags(metro.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+
+        ola.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.olacabs.com")));
+
+            }
+        });
+        uber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.uber.com/en-IN/cities/new-delhi/")));
+
+
+            }
+        }); bus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.delhitravelhelp.in")));
+
+
+            }
+        }); metro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.delhimetrorail.com")));
+
+            }
+        });
         accomodation=(ImageView) view.findViewById(R.id.accomodation4);
  img= (ImageView) view.findViewById(R.id.mapButton);
+
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,93 +143,28 @@ public class Explore extends Fragment {
             public void onClick(View view) {
 
                 restaurants childFragment = new restaurants();
-                /*FragmentManager manager=getFragmentManager();
-                manager.beginTransaction().replace(R.id.explore_by_d,childFragment,childFragment.getTag()).commit();*/
                 getChildFragmentManager().beginTransaction().replace(R.id.explore_by_d,childFragment).commit();
             }
         });
-//     transport.setOnClickListener(new View.OnClickListener() {
-//         @Override
-//         public void onClick(View view) {
-//             PopupMenu popupmenu = new PopupMenu(getActivity(),transport);
-//             popupmenu.getMenuInflater().inflate(R.menu.options_transport,popupmenu.getMenu());
-//             popupmenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-//                 @Override
-//                 public boolean onMenuItemClick(MenuItem menuItem) {
-//                     int s=menuItem.getItemId();
-//                     if(s==R.id.METRO)
-//                     {
-//                         Intent callIntent = new Intent(Intent.ACTION_VIEW);
-//                         callIntent.setData(Uri.parse(""));
-//                         startActivity(callIntent);
-//
-//                     }
-//                     else
-//                     {
-//                         Intent callIntent = new Intent(Intent.ACTION_VIEW);
-//                         callIntent.setData(Uri.parse("http://delhi.gov.in/wps/wcm/connect/DOIT_DTC/dtc/home"));
-//                         startActivity(callIntent);
-//                     }
-//                     return true;
-//                 }
-//             }); popupmenu.show();
-//         }
-//     });
+        nearby= (ImageView) view.findViewById(R.id.nearby);
+        nearby.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=NearbyPlaces&h1=en")));
+            }
+        });
         accomodation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Hotels h=new Hotels();
-                getChildFragmentManager().beginTransaction().replace(R.id.explore_by_d,h).commit();
 
+                Hotels childFragment = new Hotels();
+                getChildFragmentManager().beginTransaction().replace(R.id.explore_by_d,childFragment).commit();
             }
         });
-//        cabs.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                PopupMenu popupMenu =new PopupMenu(getActivity(),cabs);
-//                popupMenu.getMenuInflater().inflate(R.menu.options_cabs,popupMenu.getMenu());
-//                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-//                    @Override
-//                    public boolean onMenuItemClick(MenuItem menuItem) {
-//                        int s=menuItem.getItemId();
-//                        if(s==R.id.OLA)
-//                        {
-//                            Intent callIntent = new Intent(Intent.ACTION_VIEW);
-//                            callIntent.setData(Uri.parse("https://www.olacabs.com"));
-//                            startActivity(callIntent);
-//                        }
-//                        else
-//                        {
-//                            Intent callIntent = new Intent(Intent.ACTION_VIEW);
-//                            callIntent.setData(Uri.parse("https://www.uber.com/en-IN/cities/new-delhi/"));
-//                            startActivity(callIntent);
-//                        }
-//
-//
-//
-//                        return true;
-//                    }
-//                });
-//                popupMenu.show();
-//            }
-//         }  );
+
 
         return view;
 
     }
-
-//    private void flipCard() {
-//
-//
-//
-//        FlipAnimation flipAnimation = new FlipAnimation(cardface, cardback);
-//
-//        if (cardface.getVisibility() == View.INVISIBLE)
-//        {
-//            flipAnimation.reverse();
-//        }
-//        rootLayout.startAnimation(flipAnimation);
-//    }
-
 
 }

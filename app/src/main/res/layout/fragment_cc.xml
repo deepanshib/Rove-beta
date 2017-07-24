@@ -1,0 +1,103 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="@drawable/bgn">
+    tools:context="com.example.terminator.tourist.cc">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#05eef2">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\tPlaces to Visit"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cc" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHANDNI CHOWK"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#fff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/b1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="map"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:text=" Chandni Chowk is the most popular and old markets of Delhi.It is a very crowded market with all type of goods available, like all kinds of fabrics such as silks, satin, crepe, cotton and muslin, electrical goods. One can also find a lot of mouth watering street food joints and stalls in Chandni Chowk.
+\n
+Timings : 10:00am-10:30pm
+\n
+Nearest Metro Station :Chandni Chowk Metro Station (Underground Station)
+"
+
+            android:visibility="visible" />
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

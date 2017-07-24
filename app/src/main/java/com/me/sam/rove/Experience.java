@@ -17,22 +17,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 
 public class Experience extends Fragment{
-
     private CardView cvTourist, cvTraveller, cvExplorer;
-
     public Experience() {
         // Required empty public constructor
     }
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -44,43 +40,27 @@ public class Experience extends Fragment{
         cvTourist = (CardView) view.findViewById(R.id.cvTourist);
         cvTraveller = (CardView) view.findViewById(R.id.cvTraveller);
         cvExplorer = (CardView) view.findViewById(R.id.cvExplorer);
-
-
-
         cvTourist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 touristFragment abc = new touristFragment();
                 getChildFragmentManager().beginTransaction().replace(R.id.layoutExperience,abc).commit();
-                  //R.id.LayoutExperience
             }
         });
-
         cvTraveller.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 travellerFragment abc = new travellerFragment();
-
                 getChildFragmentManager().beginTransaction().replace(R.id.layoutExperience,abc).commit();
-
             }
         });
-
         cvExplorer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 explorerFragment abc = new explorerFragment();
-
                 getChildFragmentManager().beginTransaction().replace(R.id.layoutExperience,abc).commit();
             }
         });
-
-
         return view;
-
-
     }
-
-
-
 }

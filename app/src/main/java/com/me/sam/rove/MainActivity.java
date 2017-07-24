@@ -2,7 +2,11 @@ package com.me.sam.rove;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
@@ -17,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.os.Handler;
@@ -24,17 +29,18 @@ import android.os.Handler;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.io.File;
+
+import static com.me.sam.rove.R.id.btnCamera;
+import static com.me.sam.rove.R.id.developers;
+
 
 public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
+    private static final int CAMERA_REQUEST = 1;
 
-
+int n=1;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-
-
-
-
-
         private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -100,7 +106,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user == null) {
                     // User is signed out
-                    Toast.makeText(MainActivity.this,"main to sign in",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(MainActivity.this,"main to sign in",Toast.LENGTH_LONG).show();
                     Intent i = new Intent(MainActivity.this,LogInPage.class);
                     startActivity(i);
                     finish();
@@ -140,25 +146,33 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         int id = item.getItemId();
 
         if (id == R.id.share) {
-
+            ApplicationInfo info = getApplicationContext().getApplicationInfo();
+            String filepath = info.sourceDir;
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("*/*");
+            intent.setPackage("com.android.bluetooth");
+            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filepath)));
+            startActivity(Intent.createChooser(intent, "Share app"));
         } else if (id == R.id.feedback) {
-
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(Intent.EXTRA_TEXT, "Hey, Just downloaded ROVE-Delhi travel App, you also download and have fun visiting Delhi.Link-www.RoveDADSPJN.tech");
+            startActivity(Intent.createChooser(i, "Message With"));
         } else if (id == R.id.rateus) {
-
+Toast.makeText(this,"Directing you to PlayStore",Toast.LENGTH_SHORT).show();
         } else if (id == R.id.developers) {
-
-        }
-        else if (id == R.id.SignIn) {
-
-            Intent i = new Intent(MainActivity.this,LogInPage.class);
-            startActivity(i);
-
-
-
+startActivity(new Intent(this,developers.class));
         }
 
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return false;
     }
+    public  void camera(View view){
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(cameraIntent, CAMERA_REQUEST);
+    }
+//    public void OnAcitivityForResult(int requestCode,int resultCode,Intent imageReturnedIntent){
+//
+//    }
 }

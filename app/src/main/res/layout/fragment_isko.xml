@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgn">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/iskcontemple" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ISKCON TEMPLE"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/b1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="map"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text=" ISKCON is a highly renowned name in Delhi if we speak about the places of worship. A massive structure built for the praise and worship of Lord Krishna, ISKCON is situated on Hare Krishna Hill in East of Kailash. The holy shrine has incredible architecture, which has been designed by famous architect Achyut Kanvinde. There is a massive hall that has been embossed with scenes depicted from the Mahabharata. The angelic chant of the Hare Rama, Hare Krishna and the melodious beating of the Mridangam makes the ambiance of the temple extremely pious. ISKCON also has a museum, where one can find copies of the Bhagvad Gita in any language.
+"
+
+                    android:visibility="visible" />
+
+
+
+
+
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

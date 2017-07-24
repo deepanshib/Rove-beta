@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 
 public class touristFragment extends Fragment {
-ImageView b1,b2,b3,b4,b5,b6,back;
+ImageView b1,b2,b3,b4,b5,b6,b7,b8,back;
 
     public touristFragment() {
         // Required empty public constructor
@@ -39,6 +39,9 @@ ImageView b1,b2,b3,b4,b5,b6,back;
         b4= (ImageView) view.findViewById(R.id.bt4a);
         b5= (ImageView) view.findViewById(R.id.bt5a);
         b6= (ImageView) view.findViewById(R.id.bt6a);
+        b7= (ImageView) view.findViewById(R.id.bt7a);
+        b8= (ImageView) view.findViewById(R.id.sarojni);
+
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +62,7 @@ ImageView b1,b2,b3,b4,b5,b6,back;
             @Override
             public void onClick(View v) {
 
-                gandhifragment abc = new gandhifragment();
+                lotus abc = new lotus();
                 getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
@@ -71,11 +74,35 @@ ImageView b1,b2,b3,b4,b5,b6,back;
                 getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                akshardham abc = new akshardham();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
+            }
+        });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 jamafargment abc = new jamafargment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
+            }
+        });
+
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                indiagatefragment abc = new indiagatefragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
+            }
+        });
+        b8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sarojinimarket abc = new sarojinimarket();
                 getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });

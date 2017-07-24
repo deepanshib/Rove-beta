@@ -5,109 +5,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/bgn">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#05eef2">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="30dp"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="back"
-            android:src="@drawable/back" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="\t\t\tPlaces to Visit"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:textColor="#000"
-            android:textSize="25dp"
-            />
-    </android.support.v7.widget.Toolbar>
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="208dp"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/gandhim" />
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="GANDHI SMRITI MUSEUM"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#fff" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/b"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="back" />
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
 
-        <Button
-            android:layout_width="0dp"
-            android:id="@+id/b1"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="map"
-            />
-
-
-
-
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar>
     </LinearLayout>
-
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-
-
-        <TextView
-            android:id="@+id/tv"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="serif"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/gandhim" />
 
-            android:text="Opposite Raj Ghat is the Gandhi Museum. Dedicated to the Father of the Nation, the museum contains some of his personal belongings. There are five pavilions one can go through that comprise of sculpture, photographs and paintings of Gandhi and the history of the Satyagraha movement as well as the philosophy of 'Ahinsa' (non-violence).
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GANDHI SMRITI MUSEUM"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/b1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="map"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+
+                    android:text="Opposite Raj Ghat is the Gandhi Museum. Dedicated to the Father of the Nation, the museum contains some of his personal belongings. There are five pavilions one can go through that comprise of sculpture, photographs and paintings of Gandhi and the history of the Satyagraha movement as well as the philosophy of 'Ahinsa' (non-violence).
+\n
 Timing: 10.00am To 5:30 pm(Closed on Monday,Gazetted and National Holidays)
-
+\n
 Entry Fees:  Nil
-
+\n
 Location: Opposite Raj Ghat, Ring Road, Delhi.
-
+\n
 Nearest Metro Station:Rajeev Chowk(Also known as Connaught Place)
 "
 
-            android:visibility="visible" />
+                    android:visibility="visible" />
 
 
 
 
 
+            </ScrollView>
+
+
+        </LinearLayout>
     </ScrollView>
+
+
 
 
 

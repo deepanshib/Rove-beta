@@ -1,109 +1,121 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/bgn"
-    android:layout_height="match_parent">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#05eef2">
+    android:background="@drawable/bgn">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="30dp"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="back"
-            android:src="@drawable/back" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="\t\t\tPlaces to Visit"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:textColor="#000"
-            android:textSize="25dp"
-            />
-    </android.support.v7.widget.Toolbar>
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="208dp"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/qutab" />
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="QUTAB MINAR"
-        android:padding="10dp"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#fff" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/b"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="back" />
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
 
-        <Button
-            android:layout_width="0dp"
-            android:id="@+id/b1"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="map"
-            />
-
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar>
     </LinearLayout>
-
-
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-
-        <TextView
-            android:id="@+id/tv"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="serif"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/qutab" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUTAB MINAR"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            android:text="A valuable, protected structure of India is Qutub Minar. It was declared as a UNESCO World Heritage Site. The structure is situated in the Mehrauli area of Delhi. Qutub Minar Metro Station located
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/b1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="map"
+                    />
 
+            </LinearLayout>
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+android:padding="10dp"
+                    android:text="A valuable, protected structure of India is Qutub Minar. It was declared as a UNESCO World Heritage Site. The structure is situated in the Mehrauli area of Delhi. Qutub Minar Metro Station located
+\n\n
 Timings: The visit to the structure is restricted to the day time between sunrise and sunset on all days.
-
+\n\n
 Entry fee: For Indian citizens: Rs. 30 and for foreign nationals: Rs.500.
 For children up to 15years, the entry is free.
-
+\n\n
 Location: Mehrauli in South West district of New Delhi, India.
 "
 
-            android:visibility="visible" />
+                    android:visibility="visible" />
 
 
 
 
 
+            </ScrollView>
+
+
+        </LinearLayout>
     </ScrollView>
+
+
+
 
 
 </LinearLayout>

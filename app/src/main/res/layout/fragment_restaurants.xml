@@ -4,19 +4,12 @@
     android:layout_height="match_parent"
     tools:context="com.me.sam.rove.restaurants"
     android:background="@drawable/bg"
-    android:id="@+id/restaurants"
-    >
-
-
-
+    android:id="@+id/restaurants">
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-
-
-
         android:layout_alignParentTop="true">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -26,16 +19,13 @@
             >
             <ImageView
                 android:id="@+id/back"
-                android:layout_width="50dp"
+                android:layout_width="30dp"
                 android:layout_height="?attr/actionBarSize"
                 android:src="@drawable/back"
                 android:onClick="back"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"/>
         </android.support.v7.widget.Toolbar>
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

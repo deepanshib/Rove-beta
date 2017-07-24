@@ -4,17 +4,13 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/SignIn"
-            android:icon="@drawable/cast_ic_mini_controller_pause"
-            android:title="Developers" />
-        <item
             android:id="@+id/share"
             android:icon="@drawable/share"
             android:title="Share" />
         <item
             android:id="@+id/feedback"
             android:icon="@drawable/feedback"
-            android:title="Feedback" />
+            android:title="Share via msg" />
         <item
             android:id="@+id/rateus"
             android:icon="@drawable/rateus"

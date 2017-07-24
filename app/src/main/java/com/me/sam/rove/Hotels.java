@@ -1,6 +1,7 @@
 package com.me.sam.rove;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,11 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 public class Hotels extends Fragment {
    Button north,south,east,west;
-    ImageButton go;
+ImageView back;
 
     public Hotels() {
         // Required empty public constructor
@@ -35,6 +37,14 @@ public class Hotels extends Fragment {
         south=(Button)view.findViewById(R.id.south1);
         east=(Button)view.findViewById(R.id.east1);
         west=(Button)view.findViewById(R.id.west1);
+        back= (ImageView) view.findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Explore r=new Explore();
+                getChildFragmentManager().beginTransaction().replace(R.id.hotel_layout,r).commit();
+            }
+        });
         All_hotel a=new All_hotel();
         getChildFragmentManager().beginTransaction().replace(R.id.hotel_frame,a).commit();
         north.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +54,7 @@ public class Hotels extends Fragment {
                 getChildFragmentManager().beginTransaction().replace(R.id.hotel_frame,h).commit();
             }
         });
-        go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Explore exp=new Explore();
-                getChildFragmentManager().beginTransaction().replace(R.id.hotel_layout,exp).commit();
-            }
-        });
+
         south.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

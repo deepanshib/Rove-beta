@@ -1,17 +1,19 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg"
     tools:context="com.me.sam.rove.west_hotels">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
     <LinearLayout
         android:id="@+id/all_hotels"
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:orientation="vertical"
         android:layout_margin="10dp"
         android:weightSum="1">
@@ -520,3 +522,4 @@
 
 
 </FrameLayout>
+</ScrollView>

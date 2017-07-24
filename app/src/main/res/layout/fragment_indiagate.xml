@@ -5,105 +5,118 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/bgn">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#05eef2">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="30dp"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="back"
-            android:src="@drawable/back" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="\t\t\tPlaces to Visit"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:textColor="#000"
-            android:textSize="25dp"
-            />
-    </android.support.v7.widget.Toolbar>
     <!-- TODO: Update blank fragment layout -->
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="208dp"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/indiagate" />
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="INDIA GATE"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#fff" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/b"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="back" />
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
 
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="fav"
-            />
-
-
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar>
     </LinearLayout>
-
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-
-        <TextView
-            android:id="@+id/tv"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="serif"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/indiagate" />
 
-            android:text="India Gate has its original name as All India War Memorial that was built in order to commemorate the 82000 soldiers of the Indian Army who lost their lives during the First World War happened from 1914 to 1921 as well as in the Third Anglo-Afghan War.
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INDIA GATE"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/b1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="MAP"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+
+                    android:text="India Gate has its original name as All India War Memorial that was built in order to commemorate the 82000 soldiers of the Indian Army who lost their lives during the First World War happened from 1914 to 1921 as well as in the Third Anglo-Afghan War.
+\n
 Timings: Open on all days 24 hours.
-
+\n
 Entry fee: No entry fee.
-
+\n
 Location: Rajpath Marg, India Gate, New Delhi, Delhi 110001.
 "
 
-            android:visibility="visible" />
+                    android:visibility="visible" />
 
 
 
 
 
+            </ScrollView>
+
+        </LinearLayout>
     </ScrollView>
+
+
+
+
 
 </LinearLayout>

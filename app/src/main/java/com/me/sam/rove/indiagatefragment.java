@@ -9,10 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class indiagatefragment extends Fragment {
     Button b,b1;
-
+ImageView back;
     public indiagatefragment() {
         // Required empty public constructor
     }
@@ -30,12 +31,13 @@ public class indiagatefragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_indiagate, container, false);
         b1 = (Button) view.findViewById(R.id.b1);
-        b=(Button)view.findViewById(R.id.b);
-        b.setOnClickListener(new View.OnClickListener() {
+
+        back= (ImageView) view.findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                explorerFragment abc = new explorerFragment();
-                getChildFragmentManager().beginTransaction().replace(R.id.container,abc).commit();
+
+                startActivity(new Intent(getContext(),MainActivity.class));
             }
         });
         b1.setOnClickListener(new View.OnClickListener() {

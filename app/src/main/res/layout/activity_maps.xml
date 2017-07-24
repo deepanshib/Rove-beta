@@ -15,8 +15,8 @@
         android:background="#05eef2"
         >
         <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="50dp"
+            android:id="@+id/back"
+            android:layout_width="30dp"
             android:layout_height="?attr/actionBarSize"
             android:src="@drawable/back"
             android:onClick="back"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.me.sam.rove.Westdelhi_Restaurants"
-    android:background="@drawable/bg">
+ >
 
     <LinearLayout
         android:id="@+id/east_food"

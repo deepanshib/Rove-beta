@@ -9,21 +9,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class dollfragment extends Fragment {
-Button b,b1;
+Button b1;
 
     public dollfragment() {
         // Required empty public constructor
     }
 
-
+ImageView back;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -32,6 +32,16 @@ Button b,b1;
         // Inflate the layout for this fragment
 
         View view=inflater.inflate(R.layout.fragment_doll_m, container, false);
+        back= (ImageView) view.findViewById(R.id.back);
+        b1= (Button) view.findViewById(R.id.b1);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getContext(),MainActivity.class));
+            }
+        });
 //        b1=(Button)view.findViewById(R.id.b1);
 //        b=(Button)view.findViewById(R.id.b);
 //        b.setOnClickListener(new View.OnClickListener() {
@@ -41,13 +51,13 @@ Button b,b1;
 //                getChildFragmentManager().beginTransaction().replace(R.id.container,abc).commit();
 //            }
 //        });
-//        b1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=DelhiDollMuseum&h1=en")));
-//
-//            }
-//        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=DollMuseum&h1=en")));
+
+            }
+        });
         return view;
     }
 

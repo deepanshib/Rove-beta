@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -40,7 +41,7 @@ public class profile extends Fragment {
     private TextView tvUserName,tvTravelling;
     private EditText etUserName, etTravellingWith;
     private ImageButton edit;
-    private Button btnCamera, btnGallery, b;
+    private Button btnCamera, btnGallery, b,c;
     private Boolean editBool = false;
     private ImageView profilePic;
     private String uid;
@@ -80,6 +81,17 @@ public class profile extends Fragment {
         btnCamera = (Button) view.findViewById(R.id.btnCamera);
         btnGallery = (Button) view.findViewById(R.id.btnGallery);
         b = (Button) view.findViewById(R.id.logOut);
+c = (Button) view.findViewById(R.id.memories);
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                Uri uri = Uri.parse(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath()
+                        + "/Pictures");
+                intent.setDataAndType(uri, "image/*");
+                startActivity(Intent.createChooser(intent, "Your Memories"));
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();

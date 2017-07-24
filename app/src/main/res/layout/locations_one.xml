@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/places"
-        >
+    android:layout_height="wrap_content"
+    android:id="@+id/places"
 
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="back"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar></LinearLayout>
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+            android:layout_marginTop="50dp">
 
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="#05eef2">
 
-                <ImageView
-                    android:id="@+id/back"
-                    android:layout_width="30dp"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:onClick="back"
-                    android:src="@drawable/back" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="\t\t\tPlaces to Visit"
-                    android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:textColor="#000"
-                    android:textSize="25dp"
-                    />
-            </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
 
     android:orientation="vertical">
             <LinearLayout
@@ -66,6 +71,8 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/lot" />
             </LinearLayout>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -95,16 +102,35 @@
                     android:scaleType="centerCrop"
                     android:layout_weight="1"
                     android:id="@+id/bt5a"
-                    android:src="@drawable/jama" />z
+                    android:src="@drawable/jama" />
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
-                    android:id="@+id/bt6a"
-                    android:layout_weight="1"
-                    android:src="@drawable/zoo2" />
+                    android:id="@+id/bt7a"
+                    android:src="@drawable/indig8" />
+
             </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:id="@+id/bt6a"
+            android:src="@drawable/zoo2"
+            android:layout_weight="0.15" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:id="@+id/sarojni"
+            android:src="@drawable/delhihaat" />
+    </LinearLayout>
         </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
 </ScrollView>
+        </LinearLayout>
+  </RelativeLayout>

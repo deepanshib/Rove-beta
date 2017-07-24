@@ -66,7 +66,7 @@ public class Utilities extends Fragment {
             public void onClick(View v) {
 
                 if(a==false) {
-                    tv2.setText("hjfjhfkgk\n jrhfkjh\nrrhkerhgkjehgke\nkrejhkurehferk\n");
+                    tv2.setText("Network Issue");
 
                     tv2.setVisibility(View.VISIBLE);
                 }
@@ -100,11 +100,11 @@ public class Utilities extends Fragment {
             public void onClick(View v) {
 
                 if(a==false) {
-                    tv4.setText("  Police\t\t\t100\n\n" +
+                    tv4.setText("  Police\t\t\t\t\t100\n\n" +
                             "  Fire\t\t\t\t\t101\n\n" +
-                            "  Ambulance\t\t\t\t\t102\n\n" +
-                            "  Women Helpline\t\t\t\t\t181\n\n"+
-                            "  Child Helpline\t\t\t\t\t1098\n\n");
+                            "  Ambulance\t\t\t102\n\n" +
+                            "  Women Helpline\t\t\t181\n\n"+
+                            "  Child Helpline\t\t\t1098\n\n");
 
                     tv4.setVisibility(View.VISIBLE);
                 }
@@ -123,10 +123,10 @@ public class Utilities extends Fragment {
 
             public void onClick(View v) {
                 if(a==false) {
-                    tv5.setText("* International Trade Fair usually held in late November in Pragati Maidan.It is an art & craft fair.\n"+
-                            "* International Mango Festival at Dilli Haat. Held between the months of June-July.\n"+
-                            "* Qutub Festival at Qutub Complex,Mehrauli Road.\n"+
-                            "* Delhi Book Fair at Pragati Maidan held in the month of January\n");
+                    tv5.setText("\n* International Trade Fair usually held in late November in Pragati Maidan.It is an art & craft fair.\n\n"+
+                            "* International Mango Festival at Dilli Haat. Held between the months of June-July.\n\n"+
+                            "* Qutub Festival at Qutub Complex,Mehrauli Road.\n\n"+
+                            "* Delhi Book Fair at Pragati Maidan held in the month of January\n\n");
 
                     tv5.setVisibility(View.VISIBLE);
                 }
@@ -144,15 +144,15 @@ public class Utilities extends Fragment {
             @Override
             public void onClick(View v) {
                 if(a==false) {
-                    tv6.setText("* Visit Delhi in the months of February, March, October or November.\n"+
-                            "* Delhi has the BEST food. Period. You can find some of the best Mughalai curries, chaat (vegetarian street food), international restaurants and cuisines from all over India.\n"+
-                            "* The best way to get around is Delhi Metro which connects most parts of Delhi really well.\n"+
-                            "* Delhi Metro has a separate dedicated coach for female passengers, which is usually the first coach.\n"+
-                            "* Wearing a traditional sari every day may not be necessary for ladies but it would be wise to cover up and dress modestly to avoid unwarranted advances. \n"+
-                            "* For guys, long pants and sandals are a good bet on any given day.\n"+
-                            "* Humidity is worst in the early summer months when temperatures soar over 100° F, but tends to wash off with the monsoon towards August.\n"+
-                            "* Don’t drink the tap water, wash your hands frequently, and make sure that your food is thoroughly rinsed.\n"+
-                            "* Only drink bottled water\n");
+                    tv6.setText("\n* Visit Delhi in the months of February, March, October or November.\n"+
+                            "\n* Delhi has the BEST food. Period. You can find some of the best Mughalai curries, chaat (vegetarian street food), international restaurants and cuisines from all over India.\n"+
+                            "\n* The best way to get around is Delhi Metro which connects most parts of Delhi really well.\n"+
+                            "\n* Delhi Metro has a separate dedicated coach for female passengers, which is usually the first coach.\n"+
+                            "\n* Wearing a traditional sari every day may not be necessary for ladies but it would be wise to cover up and dress modestly to avoid unwarranted advances. \n"+
+                            "\n* For guys, long pants and sandals are a good bet on any given day.\n"+
+                            "\n* Humidity is worst in the early summer months when temperatures soar over 100° F, but tends to wash off with the monsoon towards August.\n"+
+                            "\n* Don’t drink the tap water, wash your hands frequently, and make sure that your food is thoroughly rinsed.\n"+
+                            "\n* Only drink bottled water\n");
 
                     tv6.setVisibility(View.VISIBLE);
                 }
@@ -169,12 +169,12 @@ public class Utilities extends Fragment {
             @Override
             public void onClick(View v) {
                 if(a==false) {
-                    tv7.setText("* Always stand in que.\n" +
-                            "* Use Dustbins\n" +
-                            "* Do not bring eatable inside the metro station premises\n"+
-                            "* Avoid carrying children inside movie theater\n"+
-                            "* Don't play your mobile songs on loudspeaker mode\n"+
-                            "* Let people come out first, before you barge in - elevators, metro, malls.\n");
+                    tv7.setText("\n* Always stand in que.\n" +
+                            "\n* Use Dustbins\n" +
+                            "\n* Do not bring eatable inside the metro station premises\n"+
+                            "\n* Avoid carrying children inside movie theater\n"+
+                            "\n* Don't play your mobile songs on loudspeaker mode\n"+
+                            "\n* Let people come out first, before you barge in - elevators, metro, malls.\n");
 
                     tv7.setVisibility(View.VISIBLE);
                 }

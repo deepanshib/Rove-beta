@@ -9,11 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 public class restaurants extends Fragment {
   Button north,south,east,west;
-    ImageButton back;
+    ImageView back;
     public restaurants() {
         // Required empty public constructor
     }
@@ -35,7 +36,7 @@ public class restaurants extends Fragment {
         south=(Button)view.findViewById(R.id.south);
         east=(Button)view.findViewById(R.id.east);
         west=(Button)view.findViewById(R.id.west);
-        back=(ImageButton)view.findViewById(R.id.back);
+        back=(ImageView)view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

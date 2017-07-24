@@ -1,150 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/places2"
+
     android:background="@drawable/bg">
-    <RelativeLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="back"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar></LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/places2">
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
 
-        <LinearLayout
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
+            android:layout_height="wrap_content">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="#05eef2">
+                android:layout_height="wrap_content"
 
-                <ImageView
-                    android:id="@+id/back"
-                    android:layout_width="30dp"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:onClick="back"
-                    android:src="@drawable/back" />
-                <TextView
+                android:orientation="vertical">
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="\t\t\tPlaces to Visit"
-                    android:textColor="#000"
-                    android:textStyle="bold"
-                    android:textSize="30dp" />
-            </android.support.v7.widget.Toolbar>
+                    android:layout_height="200dp"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/bt1b"
+                        android:layout_weight="1"
+                        android:src="@drawable/dollfinal" />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/bt2b"
+                        android:layout_weight="1"
+                        android:src="@drawable/haat" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/bt3b"
+                        android:layout_weight="1"
+                        android:src="@drawable/tomb" />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:layout_weight="1"
+                        android:id="@+id/bt4b"
+                        android:src="@drawable/abc" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        android:id="@+id/bt5b"
+                        android:src="@drawable/iskon" />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/bt3a"
+                        android:layout_weight="1"
+                        android:src="@drawable/qutub2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:id="@+id/bt1a"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/redfo"
+                        android:layout_weight="1"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="20dp">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:id="@+id/bt1b"
-                    android:layout_weight="1"
-                    android:src="@drawable/dollfinal" />
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/bt2b"
-                    android:layout_weight="1"
-                    android:src="@drawable/haat" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="20dp">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:id="@+id/bt3b"
-                    android:layout_weight="1"
-                    android:src="@drawable/tomb" />
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerInside"
-                    android:layout_weight="1"
-                    android:id="@+id/bt4b"
-                    android:src="@drawable/abc" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="20dp">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:id="@+id/bt5b"
-                    android:src="@drawable/iskon" />
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:id="@+id/bt3a"
-                    android:src="@drawable/qutub2" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="10dp">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:id="@+id/bt1a"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/redfo"
-                    android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/bt2a"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/lot" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_weight="1"
+                        android:id="@+id/bt5a"
+                        android:src="@drawable/jama" />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/bt6a"
+                        android:layout_weight="1"
+                        android:src="@drawable/zoo2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="20dp">
 
-                <ImageView
-                    android:id="@+id/bt2a"
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/lot" />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/bt4a"
+                        android:layout_weight="1"
+                        android:src="@drawable/aksh1" />
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        android:id="@+id/bt7a"
+                        android:src="@drawable/indig8" />
+                </LinearLayout>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="20dp">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:layout_weight="1"
-                    android:id="@+id/bt5a"
-                    android:src="@drawable/jama" />
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:id="@+id/bt6a"
-                    android:layout_weight="1"
-                    android:src="@drawable/zoo2" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="20dp">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/bt4a"
-                    android:src="@drawable/aksh1" />
-            </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

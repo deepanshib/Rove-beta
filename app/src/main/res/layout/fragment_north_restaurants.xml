@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbarAlwaysDrawVerticalTrack="true"
-    tools:context="com.example.deepali.travel_deepali.north_restaurants"
-    android:background="@color/colorPrimary">
+    tools:context="com.me.sam.rove.north_restaurants"
+ >
 
 
 
