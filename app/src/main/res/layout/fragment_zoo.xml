@@ -2,11 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/bgn">
+    android:background="@drawable/bgn"
+    tools:context="com.me.sam.rove.zoo">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -47,18 +46,18 @@
                 android:layout_height="208dp"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/jantarmantar" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/zoo2" />
 
             <TextView
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="JANTAR MANTAR"
+                android:text="Delhi Zoological Park"
                 android:textAlignment="center"
+                android:padding="10dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#fff"
-                android:padding="10dp"/>
+                android:textColor="#fff" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,15 +70,10 @@
                     android:layout_weight="1"
                     android:text="map"
                     />
-
-
             </LinearLayout>
-
-
-
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1">
 
 
@@ -88,30 +82,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="serif"
+                    android:padding="10dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
-                    android:padding="10dp"
                     android:layout_margin="5dp"
 
-                    android:text="At Delhi Jantar Mantar, there are 13 architectural astronomy instruments. This observatory was designed in order to compile the astronomical tables and to predict the movement and timings of the sun, the moon and the planets. The Observatory possesses masonry built astronomical instruments.
-\n\n
-Timings: 09:00 am - 07:00 pm.(All Days)
-\n\n
-Entry fee: Indian citizens have to pay INR 5 and foreign nationals have to pay INR 100.
-\n\n
-Location: Sansad Marg, Connaught Place, New Delhi, Delhi 110001.
+                    android:text="Delhi Zoo is also known as Chidiya Ghar is located near Purana Qila on Mathura Road. Delhi Zoo is one of the most visited and interesting place in Delhi. It attracts visitors of all age groups, from kids to senior citizens. \nDelhi Zoological Park spreads over an area of 176 Acre. Delhi Chidiya Ghar was officially inaugurated on 1 November 1959. It got the status Zoological Park in 1982 to make him the model zoo for other zoos in the country.\n The Zoo has more than 1300 animals of 130 species of birds and animals.\n It has some world famous animals and birds such as White Tiger, Royal Bengal Tiger, Lion, Black Buck, Indian Rhinoceros, Leopard, crocodile, Emu, Gaur, King Cobra, Giraffe, Elephant, African Elephant, etc.
+\n\nTimings : \n9.00 AM to 4.30 PM from 1st April to 15th October (Summer)\n 9.30 AM to 4 PM from 16th October to 31st March (winter)\n\n It remains closed on Every Friday and National Holidays (26 January, 2 October and 15 August).\n It records maximum number of visitors on Saturday, Sunday and Holidays. \n\n Entry fee: 40 Rs per head for Indian National and 200 for foreigners.\n\nNearest Metro station: CGO Complex Lodhi Road and Pragati Maidan, \nboth stations are 2 km way from the Zoo
 "
-
                     android:visibility="visible" />
             </ScrollView>
-
-
         </LinearLayout>
     </ScrollView>
-
-
-
-
 
 </LinearLayout>

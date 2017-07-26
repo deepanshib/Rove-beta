@@ -13,19 +13,15 @@ import android.widget.ImageView;
 
 
 public class explorerFragment extends Fragment {
-    ImageView b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,back;
+    ImageView b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,back,b17,b18;
 
     public explorerFragment() {
         // Required empty public constructor
     }
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,13 +40,19 @@ public class explorerFragment extends Fragment {
         b4= (ImageView) view.findViewById(R.id.bt4);
         b5= (ImageView) view.findViewById(R.id.bt5);
         b6= (ImageView) view.findViewById(R.id.bt6);
-//        b6= (ImageView) view.findViewById(R.id.bt7);
         b7= (ImageView) view.findViewById(R.id.bt1b);
         b8= (ImageView) view.findViewById(R.id.bt2b);
+        b9= (ImageView) view.findViewById(R.id.bt3b);
         b10= (ImageView) view.findViewById(R.id.bt4b);
         b11= (ImageView) view.findViewById(R.id.bt6a);
         b11= (ImageView) view.findViewById(R.id.bt5b);
         b12= (ImageView) view.findViewById(R.id.bt3a);
+        b13=(ImageView) view.findViewById(R.id.bt1a);
+        b14= (ImageView) view.findViewById(R.id.bt2a);
+        b15= (ImageView) view.findViewById(R.id.bt5a);
+        b16= (ImageView) view.findViewById(R.id.bt6a);//zoo
+        b17= (ImageView) view.findViewById(R.id.bt4a);
+        b18= (ImageView) view.findViewById(R.id.sarojni);
 
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -60,15 +62,14 @@ public class explorerFragment extends Fragment {
                 startActivity(new Intent(getContext(),MainActivity.class));
             }
         });
-//
-//        b1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                dollfragment abc = new dollfragment();
-//                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
-//            }
-//        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                gardenOfFiveSenses abc = new gardenOfFiveSenses();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +86,14 @@ public class explorerFragment extends Fragment {
                 getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
             }
         });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                AgrasenKiBouli abc = new AgrasenKiBouli();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,14 +127,14 @@ public class explorerFragment extends Fragment {
                 getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
             }
         });
-//        b9.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                jamafargment abc = new jamafargment();
-//                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
-//            }
-//        });
+        b9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                humayunTomb abc = new humayunTomb();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
         b10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,6 +156,54 @@ public class explorerFragment extends Fragment {
             public void onClick(View v) {
 
                 qutabfragment abc = new qutabfragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
+        b13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                redfortfragment abc = new redfortfragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
+        b14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                lotus abc = new lotus();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
+        b15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                jamafargment abc = new jamafargment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
+
+        b16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                zoo abc = new zoo();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
+        b17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                akshardham abc = new akshardham();
+                getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
+            }
+        });
+        b18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sarojinimarket abc = new sarojinimarket();
                 getChildFragmentManager().beginTransaction().replace(R.id.places3,abc).commit();
             }
         });

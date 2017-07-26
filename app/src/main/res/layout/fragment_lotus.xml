@@ -94,10 +94,8 @@
                     android:layout_margin="5dp"
 
                     android:text=" The temple of the newest religion in the world called Bahai, the Lotus Temple in Kalkaji is the reminder of freedom from the bondage of chains. The lotus-shape of the temple is what attracts the visitors and no doubt that this has made it one of the major tourist attractions in Delhi. The shrine is maintained pretty well and has high security as well.
-\n
-                                 Timings:9am-7pm
-\n
-            Address: Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019
+\n\nTimings:9am-7pm
+\n\nAddress: Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019
 "
 
                     android:visibility="visible" />

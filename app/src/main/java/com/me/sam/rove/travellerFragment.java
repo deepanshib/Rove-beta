@@ -69,6 +69,22 @@ ImageView b12;
                 getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
             }
         });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                humayunTomb abc = new humayunTomb();
+                getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
+            }
+        });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                nehrufragment abc = new nehrufragment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
+            }
+        });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -115,6 +131,14 @@ ImageView b12;
             public void onClick(View v) {
 
                 jamafargment abc = new jamafargment();
+                getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
+            }
+        });
+        b10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                zoo abc = new zoo();
                 getChildFragmentManager().beginTransaction().replace(R.id.places2,abc).commit();
             }
         });

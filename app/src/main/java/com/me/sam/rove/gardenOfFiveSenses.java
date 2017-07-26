@@ -11,14 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
-public class gandhifragment extends Fragment {
-    Button b, b1;
-ImageView back;
-    public gandhifragment() {
+public class gardenOfFiveSenses extends Fragment {
+    Button b,b1;
+    ImageView back;
+    public gardenOfFiveSenses() {
         // Required empty public constructor
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,8 +27,9 @@ ImageView back;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View view=inflater.inflate(R.layout.fragment_gandhi_m, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_garden_of_five_senses, container, false);
+        b1 = (Button) view.findViewById(R.id.b1);
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,17 +38,13 @@ ImageView back;
                 startActivity(new Intent(getContext(),MainActivity.class));
             }
         });
-        b1=(Button)view.findViewById(R.id.b1);
-
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=GandhiSmritiMuseum&h1=en")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=GardenOfFiveSensesDelhi&h1=en")));
 
             }
         });
-        return view;
-    }
-
+        return view;    }
 
 }

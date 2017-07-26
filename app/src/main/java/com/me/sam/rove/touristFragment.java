@@ -90,7 +90,14 @@ ImageView b1,b2,b3,b4,b5,b6,b7,b8,back;
                 getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
             }
         });
+        b6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                zoo abc = new zoo();
+                getChildFragmentManager().beginTransaction().replace(R.id.places,abc).commit();
+            }
+        });
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

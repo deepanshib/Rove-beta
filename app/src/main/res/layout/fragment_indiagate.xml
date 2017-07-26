@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/bgn">
+    android:background="@drawable/bgn"
+    >
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -96,12 +97,9 @@
                     android:layout_margin="5dp"
 
                     android:text="India Gate has its original name as All India War Memorial that was built in order to commemorate the 82000 soldiers of the Indian Army who lost their lives during the First World War happened from 1914 to 1921 as well as in the Third Anglo-Afghan War.
-\n
-Timings: Open on all days 24 hours.
-\n
-Entry fee: No entry fee.
-\n
-Location: Rajpath Marg, India Gate, New Delhi, Delhi 110001.
+\n\nTimings: Open on all days 24 hours.
+\n\nEntry fee: No entry fee.
+\n\nLocation: Rajpath Marg, India Gate, New Delhi, Delhi 110001.
 "
 
                     android:visibility="visible" />

@@ -2,11 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgn"
     android:orientation="vertical"
-    android:background="@drawable/bgn">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context="com.me.sam.rove.AgrasenKiBouli">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -48,70 +46,56 @@
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/jantarmantar" />
+                android:src="@drawable/agrasen" />
 
             <TextView
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="JANTAR MANTAR"
+                android:text="Agrasen Ki Bouli"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#fff"
-                android:padding="10dp"/>
+                android:textColor="#ffffff" />
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="0dp"
                     android:id="@+id/b1"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="map"
-                    />
-
-
+                    android:text="map" />
             </LinearLayout>
-
-
-
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-
+                android:layout_height="wrap_content"
+                >
                 <TextView
                     android:id="@+id/tv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="serif"
+                    android:padding="10dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
-                    android:padding="10dp"
-                    android:layout_margin="5dp"
+                    android:layout_margin="15dp"
 
-                    android:text="At Delhi Jantar Mantar, there are 13 architectural astronomy instruments. This observatory was designed in order to compile the astronomical tables and to predict the movement and timings of the sun, the moon and the planets. The Observatory possesses masonry built astronomical instruments.
-\n\n
-Timings: 09:00 am - 07:00 pm.(All Days)
-\n\n
-Entry fee: Indian citizens have to pay INR 5 and foreign nationals have to pay INR 100.
-\n\n
-Location: Sansad Marg, Connaught Place, New Delhi, Delhi 110001.
-"
+                    android:text="Agrasen ki Baoli is an Archaeological Survey of India protected monument located in Connaught Place on Hailey Road. It got the attention of tourist after it got featured in PK starring Aamir Khan. \nIt is believed that Agrasen ki Baoli is made by King Agrasen in Mahabharat Era and rebuilt by the Agrawal community in the 14th century. \nIn the past, Baoli are filled with water and are the get together point for people especially for women. People gather around the Baoli during the summer time to beat the heat. Nowadays, visitors can see the gathering of people around or inside the. Some people considered as a haunted place.
+\n\nNearest Metro Station:
+Janpath metro station and Barakhamba Road metro station
+\n\nEntry: Free
+\n\nTimings: 7 AM to 6 PM"
 
                     android:visibility="visible" />
             </ScrollView>
 
-
         </LinearLayout>
     </ScrollView>
-
-
-
 
 
 </LinearLayout>
