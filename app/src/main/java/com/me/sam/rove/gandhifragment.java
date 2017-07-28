@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,9 @@ import android.widget.ImageView;
 public class gandhifragment extends Fragment {
     Button b, b1;
 ImageView back;
+    ViewPager viewPager;
+    int images[] = {R.drawable.gandhim};
+    MyCustomPageAdapter myCustomPagerAdapter;
     public gandhifragment() {
         // Required empty public constructor
     }
@@ -31,6 +35,9 @@ ImageView back;
                              Bundle savedInstanceState) {
 
         View view=inflater.inflate(R.layout.fragment_gandhi_m, container, false);
+        viewPager = (ViewPager)view.findViewById(R.id.viewPager);
+        myCustomPagerAdapter = new MyCustomPageAdapter(getActivity(), images);
+        viewPager.setAdapter(myCustomPagerAdapter);
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

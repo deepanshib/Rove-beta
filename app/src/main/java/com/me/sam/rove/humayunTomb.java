@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,9 @@ import android.widget.ImageView;
 public class humayunTomb extends Fragment {
     Button b, b1;
     ImageView back;
+    ViewPager viewPager;
+    int images[] = {R.drawable.tomb};
+    MyCustomPageAdapter myCustomPagerAdapter;
     public humayunTomb() {
         // Required empty public constructor
     }
@@ -30,6 +34,9 @@ public class humayunTomb extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_humayun_tomb, container, false);
+        viewPager = (ViewPager)view.findViewById(R.id.viewPager);
+        myCustomPagerAdapter = new MyCustomPageAdapter(getActivity(), images);
+        viewPager.setAdapter(myCustomPagerAdapter);
         b1 = (Button) view.findViewById(R.id.b1);
 
         back= (ImageView) view.findViewById(R.id.back);
