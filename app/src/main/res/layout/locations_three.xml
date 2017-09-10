@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@drawable/bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
     android:orientation="vertical"
         android:id="@+id/places3">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:id="@+id/places3i"
+            android:orientation="vertical">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -29,18 +35,21 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 />
-        </android.support.v7.widget.Toolbar>
+        </android.support.v7.widget.Toolbar></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
     <ScrollView
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-
-    <LinearLayout
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -216,3 +225,4 @@
         </LinearLayout>
     </ScrollView>
     </LinearLayout>
+    </RelativeLayout>
