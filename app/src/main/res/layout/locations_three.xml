@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg">
-    <RelativeLayout
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+    android:orientation="vertical"
         android:id="@+id/places3">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05eef2">
 
-        <LinearLayout
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="back"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\t\tPlaces to Visit"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="#05eef2">
-
-                <ImageView
-                    android:id="@+id/back"
-                    android:layout_width="30dp"
-                    android:layout_height="?attr/actionBarSize"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:onClick="back"
-                    android:src="@drawable/back" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="\t\t\tPlaces to Visit"
-                    android:textColor="#000"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    />
-            </android.support.v7.widget.Toolbar>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -213,5 +214,5 @@
                     android:src="@drawable/exp1" />
             </LinearLayout>
         </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+    </ScrollView>
+    </LinearLayout>

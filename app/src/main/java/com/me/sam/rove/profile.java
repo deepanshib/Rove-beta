@@ -106,19 +106,19 @@ c = (Button) view.findViewById(R.id.memories);
         btnGallery.setVisibility(View.GONE);
 
 
-        FirebaseUser user = mAuth.getCurrentUser();
-        mDatabase.child("Users").child(user.getUid()).child("UserName").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                tvUserName.setText(dataSnapshot.getValue().toString());
-                etUserName.setText(dataSnapshot.getValue().toString());
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
+//        FirebaseUser user = mAuth.getCurrentUser();
+//        mDatabase.child("Users").child(user.getUid()).child("UserName").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                tvUserName.setText(dataSnapshot.getValue().toString());
+//                etUserName.setText(dataSnapshot.getValue().toString());
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
