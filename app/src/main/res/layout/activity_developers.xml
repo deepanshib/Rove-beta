@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgn"
     android:orientation="vertical"
+
     tools:context="com.me.sam.rove.developers">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -26,16 +27,17 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:layout_marginTop="150dp"
         android:src="@drawable/logoooo"/>
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:padding="10dp"
-    android:textColor="#fff"
-    android:textSize="20dp"
-    android:text="Aman"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Deepanshi Bansal"
+        android:textColor="#fff"
+        android:textSize="20dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,7 +45,7 @@
         android:padding="10dp"
         android:textColor="#fff"
         android:textSize="20dp"
-        android:text="Deepanshi"/>
+        android:text="Aman Mittal"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,38 +53,7 @@
         android:padding="10dp"
         android:textColor="#fff"
         android:textSize="20dp"
-        android:text="Deepali"/>
+        android:text="Samraj Agarwal"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="10dp"
-        android:textColor="#fff"
-        android:textSize="20dp"
-        android:text="Poshali"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="10dp"
-        android:textColor="#fff"
-        android:textSize="20dp"
-        android:text="Samraj"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="10dp"
-        android:textColor="#fff"
-        android:textSize="20dp"
-        android:text="Juhi"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="10dp"
-        android:textColor="#fff"
-        android:textSize="20dp"
-        android:text="Nupur"/>
+
 </LinearLayout>

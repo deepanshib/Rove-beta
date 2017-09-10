@@ -1,6 +1,7 @@
 package com.me.sam.rove;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -44,7 +45,7 @@ public class Utilities extends Fragment {
         tv7=(TextView)view.findViewById(R.id.tv7);
 
         cv = (CardView) view.findViewById(R.id.cv);
-        cv2 = (CardView) view.findViewById(R.id.cv2);
+       // cv2 = (CardView) view.findViewById(R.id.cv2);
         cv3 = (CardView) view.findViewById(R.id.cv3);
         cv4 = (CardView) view.findViewById(R.id.cv4);
         cv5 = (CardView) view.findViewById(R.id.cv5);
@@ -65,32 +66,22 @@ public class Utilities extends Fragment {
             @Override
             public void onClick(View v) {
 
-                if(a==false) {
-                    tv2.setText("Network Issue");
-
-                    tv2.setVisibility(View.VISIBLE);
-                }
-                else{
-                    tv2.setVisibility(View.GONE);
-
-
-                }
-                a=!a;
             }
         });
 
-        cv2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
-            }
-        });
+//        cv2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//
+//
+//            }
+//        });
 
         cv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getContext(),currencyconvrtr.class));
 
             }
         });

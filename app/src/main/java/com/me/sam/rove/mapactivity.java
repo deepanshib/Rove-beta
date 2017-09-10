@@ -33,7 +33,6 @@ public class mapactivity extends FragmentActivity implements OnMapReadyCallback 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
         // Add a marker in Sydney and move the camera
         String location[] = {"Doll Museum Delhi", "Red Fort", "Qutub Minar", "India Gate Delhi","Chandni Chowk delhi","Lotus temple","Humayun's Tomb","Delhi Zoo","INA Delhi Haat ","Akshardhaam Temple Delhi","Janter Manter Delhi"};
         List<Address> addressList = null;
