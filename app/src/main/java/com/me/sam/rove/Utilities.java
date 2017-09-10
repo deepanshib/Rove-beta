@@ -65,7 +65,7 @@ public class Utilities extends Fragment {
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+startActivity(new Intent(getContext(),weather.class));
             }
         });
 

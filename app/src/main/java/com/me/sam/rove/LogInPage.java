@@ -113,7 +113,7 @@ public class LogInPage extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed out
-                    Toast.makeText(LogInPage.this,"main to sign in", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(LogInPage.this,"main to sign in", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(LogInPage.this,MainActivity.class);
                     startActivity(i);
                     finish();
