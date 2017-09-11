@@ -34,7 +34,7 @@ public class mapactivity extends FragmentActivity implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         // Add a marker in Sydney and move the camera
-        String location[] = {"Doll Museum Delhi", "Red Fort", "Qutub Minar", "India Gate Delhi","Chandni Chowk delhi","Lotus temple","Humayun's Tomb","Delhi Zoo","INA Delhi Haat ","Akshardhaam Temple Delhi","Janter Manter Delhi"};
+        String location[] = {"Doll Museum Delhi", "Red Fort","Jama Masjid", "Adventure Island","Qutub Minar","hauz khas","chanakyapuri", "India Gate Delhi","Chandni Chowk delhi","Lotus temple","Humayun's Tomb","Delhi Zoo","INA Delhi Haat ","Akshardhaam Temple Delhi","Janter Manter Delhi"};
         List<Address> addressList = null;
         for (int i = 0; i < location.length; i++) {
             if (location[i] != null || !location[i].equals("")) {
@@ -50,7 +50,7 @@ public class mapactivity extends FragmentActivity implements OnMapReadyCallback 
 
             }
         }
-        LatLng latLng = new LatLng(28.7041, 77.1025);
+        LatLng latLng = new LatLng(28.7196,77.0662);
         CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(latLng, 11.0f);
         mMap.animateCamera(yourLocation);
         mMap.addMarker(new MarkerOptions().position(latLng).title("Current Location"));

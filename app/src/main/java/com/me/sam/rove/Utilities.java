@@ -160,7 +160,7 @@ startActivity(new Intent(getContext(),weather.class));
             @Override
             public void onClick(View v) {
                 if(a==false) {
-                    tv7.setText("\n* Always stand in que.\n" +
+                    tv7.setText("\n* Always stand in queue.\n" +
                             "\n* Use Dustbins\n" +
                             "\n* Do not bring eatable inside the metro station premises\n"+
                             "\n* Avoid carrying children inside movie theater\n"+

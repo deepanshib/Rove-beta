@@ -2,6 +2,7 @@ package com.me.sam.rove;
 
 import android.*;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -25,9 +26,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import static java.lang.Thread.sleep;
+
 public class weather extends AppCompatActivity {
     private static final int PERMISSION_REQUEST_CODE = 100;
     Double clong = 0.0, clat = 0.0;
+    //    Double clong = 28.7196, clat = 77.0662;
     LocationManager locate;
     LocationListener locationListener;
     ProgressBar progressBar;
@@ -52,24 +56,23 @@ public class weather extends AppCompatActivity {
         } catch (SecurityException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    protected void onStart() {
 
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
                 clat = location.getLatitude();
                 clong = location.getLongitude();
+                Toast.makeText(getApplicationContext(),"latitude-"+clat+" and longitude"+clong,Toast.LENGTH_LONG).show();
 //                try {
 //                    synchronized (this) {
-//                        wait(5000);
-                new weather.RetrieveFeedTask().execute();
+//                        wait(3000);
+//
 //                    }
 //                } catch (InterruptedException e) {
 //                    e.printStackTrace();
 //                }
+               new weather.RetrieveFeedTask().execute();
+
             }
 
             @Override
@@ -88,7 +91,15 @@ public class weather extends AppCompatActivity {
             return;
         }
         locate.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 50, locationListener);
+        locate.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                5000, 50, locationListener);
+//60000 n 1000
+    }
+
+    @Override
+    protected void onStart() {
         super.onStart();
+
 
     }
     class RetrieveFeedTask extends AsyncTask<Void, Void, String> {
@@ -98,6 +109,7 @@ public class weather extends AppCompatActivity {
         protected void onPreExecute() {
             progressBar.setVisibility(View.VISIBLE);
             Toast.makeText(getApplicationContext(),"Almost Done",Toast.LENGTH_SHORT).show();
+
         }
 
         protected String doInBackground(Void... urls) {
