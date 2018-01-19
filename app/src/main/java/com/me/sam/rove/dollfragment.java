@@ -19,6 +19,7 @@ Button b1;
     int images[] = {R.drawable.dollm};
     MyCustomPageAdapter myCustomPagerAdapter;
     public dollfragment() {
+
         // Required empty public constructor
     }
 
