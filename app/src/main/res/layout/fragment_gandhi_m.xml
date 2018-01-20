@@ -59,20 +59,70 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:id="@+id/b1"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="map"
-                    />
-
-
-
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_calender_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday Closed"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_call_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday Closed"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 AM to 5:30 PM"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See on Map"
+                        android:id="@+id/b1"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
 
             </LinearLayout>
+
 
 
 
@@ -94,8 +144,6 @@
                     android:layout_margin="5dp"
 
                     android:text="Opposite Raj Ghat is the Gandhi Museum. Dedicated to the Father of the Nation, the museum contains some of his personal belongings. There are five pavilions one can go through that comprise of sculpture, photographs and paintings of Gandhi and the history of the Satyagraha movement as well as the philosophy of 'Ahinsa' (non-violence).
-\n\n
-Timing: 10.00am To 5:30 pm(Closed on Monday,Gazetted and National Holidays)
 \n\n
 Entry Fees:  Nil
 \n\n

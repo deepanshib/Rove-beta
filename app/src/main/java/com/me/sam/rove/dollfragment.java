@@ -11,10 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class dollfragment extends Fragment {
-Button b1;
+TextView b1;
     ViewPager viewPager;
     int images[] = {R.drawable.dollm};
     MyCustomPageAdapter myCustomPagerAdapter;
@@ -40,7 +41,7 @@ ImageView back;
         myCustomPagerAdapter = new MyCustomPageAdapter(getActivity(), images);
         viewPager.setAdapter(myCustomPagerAdapter);
         back= (ImageView) view.findViewById(R.id.back);
-        b1= (Button) view.findViewById(R.id.b1);
+        b1= (TextView) view.findViewById(R.id.b1);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

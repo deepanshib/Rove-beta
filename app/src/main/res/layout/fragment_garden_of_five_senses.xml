@@ -56,19 +56,70 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-
-                <Button
-                    android:layout_width="0dp"
-                    android:id="@+id/b1"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="MAP"
-                    />
-
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_calender_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open Daily"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_call_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29536401"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9 AM to 6 PM"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See on Map"
+                        android:id="@+id/b1"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
 
             </LinearLayout>
+
 
 
 
@@ -92,9 +143,7 @@
                     android:text="The Garden of Five Senses is not just a park, it is a space with a variety of activities, inviting public interaction and exploration.\n The twenty-acre site, located at Said-Ul-Azaib village, close to the Mehrauli heritage area in New Delhi, is spectacular. The Garden was inaugurated in February 2003. Majestic rocks stand silhouetted against the sky, others lie strewn upon the ground in a casual yet alluring display of nature's sculptural genius. It was the ideal ground on which to realize the concept of a public leisure space that would awaken a sensory response and thereby a sensitivity to the environment.
 \n\nLocation: Said-ul-Ajaib,
 Mehrauli-Badarpur Road,
-\n\nPh: 29536401
 \n\nMetro Station: Saket
-\n\nOpen: Daily
 \n\nTimings:
 April to September: 9 AM to 7 PM
 October to March: 9 AM to 6 PM

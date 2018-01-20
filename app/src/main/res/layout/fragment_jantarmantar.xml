@@ -59,16 +59,67 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:id="@+id/b1"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="map"
-                    />
-
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_calender_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Opens Daily"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_call_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday Closed"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9 AM to 7 PM"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See on Map"
+                        android:id="@+id/b1"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -92,8 +143,6 @@
                     android:layout_margin="5dp"
 
                     android:text="At Delhi Jantar Mantar, there are 13 architectural astronomy instruments. This observatory was designed in order to compile the astronomical tables and to predict the movement and timings of the sun, the moon and the planets. The Observatory possesses masonry built astronomical instruments.
-\n\n
-Timings: 09:00 am - 07:00 pm.(All Days)
 \n\n
 Entry fee: Indian citizens have to pay INR 5 and foreign nationals have to pay INR 100.
 \n\n

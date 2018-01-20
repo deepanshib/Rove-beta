@@ -57,18 +57,70 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:id="@+id/b1"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="map"
-                    />
-
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_calender_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Idea"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_call_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday Closed"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 AM to 12 AM"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See on Map"
+                        android:id="@+id/b1"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
 
             </LinearLayout>
+
 
 
 
@@ -90,8 +142,6 @@
                     android:layout_margin="5dp"
 
                     android:text=" Khan Market was built on the name of Khan Abdul Jabbar Khan. Khan Market is one of the most expensive markets in the World on the basis of its Retail Values and costliest in India. It is basically for the elite classes of Delhi and other Tourists. This market may give you all at a single place like Ethnic Apparels, Home Appliances, Sports Goods etc.
-\n
-Timings :10am-12pm
 \n
 Nearest Metro Station :Khan Market Metro Station (Underground Station)
 "

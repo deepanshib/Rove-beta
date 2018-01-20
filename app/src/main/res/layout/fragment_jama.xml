@@ -59,17 +59,70 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:id="@+id/b1"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="map"
-                    />
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_calender_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Opens Daily"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_call_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday Closed"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07:00 AM - 12:00 PM\n01:30 PM - 06:30 PM"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See on Map"
+                        android:id="@+id/b1"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
 
             </LinearLayout>
+
 
 
 
@@ -91,7 +144,6 @@
                     android:layout_margin="5dp"
 
                     android:text="Jama Masjid is one of the largest mosques in India which was built by Mughal Emperor Shah Jahan between 1644 and 1656. The mosque is protected by three great gates and four towers. Also, there are two 40 meter high minarets created on red sandstone and white marble.
-\n\nTiming:07:00 am - 12:00 pm and 1:30 pm - 06:30 pm.(All Days)
 \n\nEntry fee: No fee
 \n\nLocation: Meena Bazaar, Jama Masjid, Chandni Chowk, New Delhi, Delhi 110006.
 "
