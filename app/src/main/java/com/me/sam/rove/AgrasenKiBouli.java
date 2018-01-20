@@ -11,11 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class AgrasenKiBouli extends Fragment {
 
-    Button b,b1;
+    Button b;
+    TextView b1;
     ImageView back;
     public AgrasenKiBouli() {
         // Required empty public constructor
@@ -40,7 +42,7 @@ public class AgrasenKiBouli extends Fragment {
 
         myCustomPagerAdapter = new MyCustomPageAdapter(getActivity(), images);
         viewPager.setAdapter(myCustomPagerAdapter);
-        b1 = (Button) view.findViewById(R.id.b1);
+        b1 = (TextView) view.findViewById(R.id.b1);
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +54,7 @@ public class AgrasenKiBouli extends Fragment {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=AgrasenKiBouliDelhi&h1=en")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.maps.google.co.uk/maps?q=AgrasenKiBaoli&h1=en")));
 
             }
         });
