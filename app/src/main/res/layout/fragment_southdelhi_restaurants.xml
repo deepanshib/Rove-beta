@@ -22,25 +22,30 @@
             android:layout_height="180dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <ImageView
                 android:id="@+id/imageView1"
-                android:layout_width="185dp"
+                android:layout_width="185sp"
                 android:src="@drawable/ratna"
                 android:scaleType="fitXY"
-
+android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="198dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/cardview_shadow_start_color"
                 >
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.6"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
@@ -49,14 +54,14 @@
                     android:text="SAGAR RATNA"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     />
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="40sp"
                     android:src="@drawable/phone_contact"/>
 
 
@@ -66,15 +71,13 @@
                     android:layout_height="1dp"
                     android:background="#000000"
                     android:layout_marginRight="10dp"
-
-
                     />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:textStyle="bold"
+                    android:layout_weight="0.2"
                     android:text="Shop No.F-2, First Floor, Kalkaji Main Road, Block F, Kalkaji, New Delhi, Delhi 110019"
                     />
                 <TextView
@@ -83,43 +86,11 @@
                     android:paddingTop="5dp"
                     android:text="OPENS At : 09:00am"
                     android:gravity="bottom"
+                    android:layout_weight="0.2"
                     android:textStyle="bold"
                     />
-                <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="47dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/call"
-                        android:paddingLeft="0dp"/>
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-
-                        android:text="CALL" />
-                </LinearLayout>-->
-
             </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
@@ -128,12 +99,16 @@
             app:cardCornerRadius="20dp"
 
             >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="185dp"
                 android:src="@drawable/delhi_pavilllion"
                 android:scaleType="fitXY"
-
+android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 />
 
@@ -141,12 +116,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="198dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/cardview_shadow_start_color"
                 ><LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+                android:layout_weight="0.6">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.85"
@@ -154,35 +131,29 @@
                     android:text="DELHI PAVILION"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="40sp"
                     android:src="@drawable/phone_contact"/>
-
-
-
-
-
             </LinearLayout>
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:background="#000000"
                     android:layout_marginRight="10dp"
-
-
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
+                    android:layout_weight="0.2"
                     android:textStyle="bold"
                     android:text="Sheraton New Delhi Hotel, District Centre, Saket, New Delhi"
                     />
@@ -192,27 +163,10 @@
                     android:paddingTop="5dp"
                     android:text="OPENS  : 24 hrs"
                     android:gravity="bottom"
+                    android:layout_weight="0.2"
                     android:textStyle="bold"
                     />
-                <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="47dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/call"
-                        android:paddingLeft="0dp"/>
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-
-                        android:text="CALL" />
-                </LinearLayout>-->
+            </LinearLayout>
 
             </LinearLayout>
 
@@ -223,12 +177,16 @@
             android:layout_height="160dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="185dp"
                 android:src="@drawable/khidmat"
                 android:scaleType="fitXY"
-
+android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 />
 
@@ -236,12 +194,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="198dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/cardview_shadow_start_color"
                 >
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.6"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
@@ -250,20 +210,16 @@
                     android:text="KHIDMAT "
                     android:textStyle="bold"
                     android:paddingTop="10dp"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="40sp"
                     android:src="@drawable/phone_contact"/>
-
-
-
-
             </LinearLayout>
 
                 <View
@@ -271,8 +227,6 @@
                     android:layout_height="1dp"
                     android:background="#000000"
                     android:layout_marginRight="10dp"
-
-
                     />
 
                 <TextView
@@ -280,6 +234,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:textStyle="bold"
+                    android:layout_weight="0.2"
                     android:text="E-9, Main Road, Near Deshbandhu College, Kalkaji, New Delhi"
                     />
                 <TextView
@@ -288,28 +243,10 @@
                     android:paddingTop="5dp"
                     android:text="OPENS At : 11:30am"
                     android:gravity="bottom"
+                    android:layout_weight="0.2"
                     android:textStyle="bold"
                     />
-                <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="47dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/call"
-                        android:paddingLeft="0dp"/>
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-
-                        android:text="CALL" />
-                </LinearLayout>-->
-
+            </LinearLayout>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -320,12 +257,20 @@
             android:layout_height="160dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="185dp"
                 android:src="@drawable/friendscafe"
                 android:scaleType="fitXY"
-
+android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 />
 
@@ -333,13 +278,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="198dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/cardview_shadow_start_color"
                 >
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.6"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
@@ -348,14 +295,14 @@
                     android:text="FRIENDS CAFE"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     />
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="40sp"
                     android:src="@drawable/phone_contact"/>
 
 
@@ -374,6 +321,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
+                    android:layout_weight="0.2"
                     android:textStyle="bold"
                     android:text="Shop 1, Ground Floor, E- 156, Main Road, Kalkaji, New Delhi"
                     />
@@ -382,31 +330,14 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
                     android:text="OPENS At : 11:00am"
+android:layout_weight="0.2"
                     android:gravity="bottom"
                     android:textStyle="bold"
                     />
-                <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="47dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/call"
-                        android:paddingLeft="0dp"/>
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-
-                        android:text="CALL" />
-                </LinearLayout>-->
-
             </LinearLayout>
 
+            </LinearLayout>
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
 
@@ -415,25 +346,30 @@
             android:layout_height="160dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="185dp"
                 android:src="@drawable/kandy"
                 android:scaleType="fitXY"
-
+android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="198dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/cardview_shadow_start_color"
                 >
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.6"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
@@ -442,14 +378,14 @@
                     android:text="KANDY'S PASTRY PARLOUR"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     />
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="40sp"
                     android:src="@drawable/phone_contact"/>
 
             </LinearLayout>
@@ -467,6 +403,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:textStyle="bold"
+                    android:layout_weight="0.2"
                     android:text="B-30/B, Near B Block Round About, Kalkaji, New Delhi"
                     android:textSize="12sp"
                     />
@@ -474,30 +411,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
+                    android:layout_weight="0.2"
                     android:text="OPENS At : 10:00am"
                     android:gravity="bottom"
                     android:textStyle="bold"
                     />
-                <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="47dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/call"
-                        android:paddingLeft="0dp"/>
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-
-                        android:text="CALL" />
-                </LinearLayout>-->
-
+            </LinearLayout>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -507,12 +426,16 @@
             android:layout_height="160dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="185dp"
                 android:src="@drawable/barbeque"
                 android:scaleType="fitXY"
-
+android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 />
 
@@ -520,12 +443,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="198dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/cardview_shadow_start_color"
                 >
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.6"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
@@ -534,12 +459,12 @@
                     android:text="BARBEQUE NATION"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     />
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/phone_contact"/>
@@ -549,8 +474,6 @@
                     android:layout_height="1dp"
                     android:background="#000000"
                     android:layout_marginRight="10dp"
-
-
                     />
 
                 <TextView
@@ -559,36 +482,18 @@
                     android:paddingTop="10dp"
                     android:textStyle="bold"
                     android:text="M-A4, DLF Place Mall, Saket, New Delhi"
-
+android:layout_weight="0.2"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
+                    android:layout_weight="0.2"
                     android:text="OPENS At : 12:00noon"
                     android:gravity="bottom"
                     android:textStyle="bold"
                     />
-                <!--<LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginTop="5dp"
-                        android:layout_width="47dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/call"
-                        android:paddingLeft="0dp"/>
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-
-
-                        android:text="CALL" />
-                </LinearLayout>-->
-
+            </LinearLayout>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>

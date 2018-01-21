@@ -6,11 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.me.sam.rove.south_hotels">
     <LinearLayout
-
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:orientation="vertical"
         android:layout_margin="10dp"
         android:weightSum="1">
