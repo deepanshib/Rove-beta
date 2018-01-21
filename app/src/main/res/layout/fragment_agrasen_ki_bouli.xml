@@ -49,7 +49,7 @@
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Agrasen Ki Bouli"
+                android:text="Agrasen Ki Baoli"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="#ffffff" />
@@ -58,14 +58,68 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@drawable/ic_calender_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday Closed"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:textColor="#fff"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_call_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday Closed"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:textColor="#fff"/>
+</LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7 AM to 6 PM"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See on Map"
+                        android:id="@+id/b1"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/b1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="map" />
             </LinearLayout>
             <ScrollView
                 android:layout_width="match_parent"
@@ -85,8 +139,7 @@
                     android:text="Agrasen ki Baoli is an Archaeological Survey of India protected monument located in Connaught Place on Hailey Road. It got the attention of tourist after it got featured in PK starring Aamir Khan. \nIt is believed that Agrasen ki Baoli is made by King Agrasen in Mahabharat Era and rebuilt by the Agrawal community in the 14th century. \nIn the past, Baoli are filled with water and are the get together point for people especially for women. People gather around the Baoli during the summer time to beat the heat. Nowadays, visitors can see the gathering of people around or inside the. Some people considered as a haunted place.
 \n\nNearest Metro Station:
 Janpath metro station and Barakhamba Road metro station
-\n\nEntry: Free
-\n\nTimings: 7 AM to 6 PM"
+\n\nEntry: Free"
 
                     android:visibility="visible" />
             </ScrollView>

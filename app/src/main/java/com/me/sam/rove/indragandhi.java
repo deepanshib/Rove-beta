@@ -10,13 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by Deepanshi Bansal on 24-07-2017.
  */
 
 public class indragandhi extends android.support.v4.app.Fragment {
-    Button b,b1;
+    Button b;
+    TextView b1;
     ImageView back;
     ViewPager viewPager;
     int images[] = {R.drawable.indram};
@@ -40,7 +42,7 @@ public class indragandhi extends android.support.v4.app.Fragment {
         viewPager = (ViewPager)view.findViewById(R.id.viewPager);
         myCustomPagerAdapter = new MyCustomPageAdapter(getActivity(), images);
         viewPager.setAdapter(myCustomPagerAdapter);
-        b1 = (Button) view.findViewById(R.id.b1);
+        b1 = (TextView) view.findViewById(R.id.b1);
         back= (ImageView) view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
