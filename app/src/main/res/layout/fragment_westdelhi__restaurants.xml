@@ -59,6 +59,7 @@
                     />
                     <ImageView
                         android:layout_width="0dp"
+                        android:id="@+id/card1"
                         android:layout_weight="0.15"
                         android:layout_marginRight="10dp"
                         android:layout_height="40sp"
@@ -137,6 +138,7 @@ android:layout_weight="1"
                     />
                 <ImageView
                     android:layout_width="0dp"
+                    android:id="@+id/card2"
                     android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
                     android:layout_height="40sp"
@@ -218,6 +220,7 @@ android:layout_weight="1"
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_weight="0.15"
+                    android:id="@+id/card3"
                     android:layout_marginRight="10dp"
                     android:layout_height="40sp"
                     android:src="@drawable/phone_contact"/>
@@ -301,6 +304,7 @@ android:layout_weight="1"
                     android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
                     android:layout_height="40sp"
+                    android:id="@+id/card4"
                     android:src="@drawable/phone_contact"/>
             </LinearLayout>
                 <View
@@ -378,6 +382,7 @@ android:layout_weight="1"
                         android:layout_weight="0.15"
                         android:layout_marginRight="10dp"
                         android:layout_height="40sp"
+                        android:id="@+id/card5"
                         android:src="@drawable/phone_contact"/>
                 </LinearLayout>
                 <View
@@ -458,6 +463,7 @@ android:layout_weight="0.5"
                     android:layout_weight="0.15"
                     android:layout_marginRight="10dp"
                     android:layout_height="40sp"
+                    android:id="@+id/card6"
                     android:src="@drawable/phone_contact"/>
             </LinearLayout>
                 <View
