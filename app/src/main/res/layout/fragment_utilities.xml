@@ -52,9 +52,9 @@
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/helpline3" />
+                    app:srcCompat="@drawable/helpline" />
 
                 <ScrollView
                     android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="match_parent"
-                    android:layout_height="88dp"
+                    android:layout_height="120dp"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/events3" />
 
@@ -147,9 +147,9 @@
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="match_parent"
-                    android:layout_height="96dp"
+                    android:layout_height="120dp"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/tips3" />
+                    app:srcCompat="@drawable/tips" />
 
                 <ScrollView
                     android:layout_width="match_parent"
@@ -193,9 +193,9 @@
                 <ImageView
                     android:id="@+id/imageView7"
                     android:layout_width="match_parent"
-                    android:layout_height="95dp"
+                    android:layout_height="120dp"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/rules3" />
+                    app:srcCompat="@drawable/rules" />
 
                 <ScrollView
                     android:layout_width="match_parent"
@@ -234,28 +234,17 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="154dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="154dp"
+                    android:layout_height="120dp"
                     android:background="@android:color/black"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     app:srcCompat="@drawable/weather" />
-
-                <TextView
-                    android:id="@+id/tv2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Weather Forecast"
-                    android:textColor="#0e3148"
-                    android:layout_marginTop="100dp"
-                    android:textStyle="bold"
-                    android:textSize="40sp"
-                     />
 
             </RelativeLayout>
         </android.support.v7.widget.CardView>
@@ -301,25 +290,16 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="158dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_height="158dp"
+                    android:layout_height="120dp"
                     android:background="@android:color/black"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     app:srcCompat="@drawable/money" />
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Currency Convertor"
-    android:textStyle="bold"
-    android:textColor="#0e3148"
-    android:textSize="36dp"
-    android:layout_marginTop="100dp"
-    />
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 

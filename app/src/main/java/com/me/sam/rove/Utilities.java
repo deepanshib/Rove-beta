@@ -38,7 +38,6 @@ public class Utilities extends Fragment {
                              Bundle savedInstanceState) {
 
         View view=inflater.inflate(R.layout.fragment_utilities, container, false);
-        tv2=(TextView)view.findViewById(R.id.tv2);
         tv4=(TextView)view.findViewById(R.id.tv4);
         tv5=(TextView)view.findViewById(R.id.tv5);
         tv6=(TextView)view.findViewById(R.id.tv6);
