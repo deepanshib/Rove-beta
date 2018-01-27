@@ -119,12 +119,12 @@ public class currencyconvrtr extends AppCompatActivity implements AdapterView.On
                 Double finalAns=0.0,finalans2=0.0;
                 if(!editText1.getText().toString().equals("")&&!item.equals("choose")) {
                     finalAns = res * Integer.parseInt(editText1.getText().toString());
-                    textView.setText(editText1.getText().toString()+" "+"USD is "+finalAns+" "+item);
+                    textView.setText(finalAns+" "+item);
 
                 }
                 if (!editText2.getText().toString().equals("")&&!item.equals("choose")) {
                     finalans2 = (1/res) *Integer.parseInt(editText2.getText().toString());
-                    textView2.setText(editText2.getText().toString() +" "+ item + " is " + finalans2 + " USD");
+                    textView2.setText(finalans2 + " USD");
                 }
 
             } catch (JSONException e) {

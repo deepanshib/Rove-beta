@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:weightSum="1"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,7 +77,6 @@
             android:id="@+id/cv5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="15dp"
             android:layout_margin="10dp"
             android:visibility="visible"
             app:cardBackgroundColor="#ffffff"
@@ -232,7 +230,6 @@
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:background="@android:color/black"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/weather" />
 
@@ -258,7 +255,6 @@
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:background="@android:color/black"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/money" />
             </RelativeLayout>

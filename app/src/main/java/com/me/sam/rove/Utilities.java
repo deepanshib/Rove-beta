@@ -50,17 +50,6 @@ public class Utilities extends Fragment {
         cv5 = (CardView) view.findViewById(R.id.cv5);
         cv6 = (CardView) view.findViewById(R.id.cv6);
         cv7 = (CardView) view.findViewById(R.id.cv7);
-
-
-
-
-
-
-
-
-
-
-
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
